@@ -1,0 +1,80 @@
+:root, body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header{
+    width: 100vw;
+    background-color: #031d03;
+}
+.header h1{
+    color: white;
+    margin: 0 auto;
+    padding: 2vw 2vh;
+    text-align: center;
+    margin-left:auto;
+}
+.source-code{
+    background-color: #031d03;
+    font-size: 18px;
+    margin: 3vh auto;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    padding: 2vh 3vw;
+    flex: 1;
+    width: 12vw;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    
+}
+.source-code:hover{
+    transform: scale(1.1);
+
+}
+.source-code h3{
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.assignments{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1.5vw;
+    flex-direction: row;
+
+    
+}
+
+.assignments .item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.4);
+    width: 12vw;
+    height: 12vw;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    margin: 2.5vh 0;
+    flex-basis: calc(20% - 3vw);
+    text-decoration: none;
+    background-color: aquamarine;
+    color: black;
+    
+
+}
+
+.assignments .item:hover{
+    transform: scale(1.1);
+
+}
+
+.item a{
+    margin: 4vh 0.75vw;
+    padding: 1vw;
+    
+}
