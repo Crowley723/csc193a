@@ -43,6 +43,9 @@ body{
     border-radius: 2px;
 
 }
+.topnav .home{
+    margin-left: auto;
+}
 .text{
     padding: 16px;
 }
