@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./fancifymytext.css">
+    <link rel="stylesheet" type="text/css" href="./fancifymytext.css?v=1.1">
+    <script type="text/javascript" src="fancifymytext.js" ></script>
     <title>Fancify My Text</title>
 </head>
 <body>
     <div class="navbar">
         <a href="/"><i class="fa fa-home"></i></a>
     </div>
-    <div class="fancify-box">
-        <textarea rows="5" cols="60" name="text" placeholder="Enter text"></textarea></br>
-        <label for="FancyShmancy">Fancy Shmancy</label>
-        <input type="radio" id="FancyShmancy" /><br>
-        <label for="BoringBetty">Boring Betty</label>
-        <input type="radio" id="BoringBetty"/>
+    <div class="body-container">
+        <div class="fancify-box">
+            <textarea rows="5" cols="60" name="text" placeholder="Enter text"></textarea></br>
+            <fieldset id="radio-set">
+            <label>Fancy Shmancy <input type="radio" id="FancyShmancy" name="radio-buttons" /></label><br>
+            <label>Boring Betty <input type="radio" id="BoringBetty" name="radio-buttons"/></label><br>
+        </fieldset>
+        <button class="bigger">Bigger!</button>
+        </div>
     </div>
+   
     
 </body>
 </html>
