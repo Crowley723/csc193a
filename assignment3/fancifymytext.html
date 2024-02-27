@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./fancifymytext.css?v=1.1">
-    <script type="text/javascript" src="fancifymytext.js" ></script>
+    <link rel="stylesheet" type="text/css" href="/assignment3/fancifymytext.css?v=1.1">
+    <script type="text/javascript" src="/assignment3/fancifymytext.js" ></script>
     <title>Fancify My Text</title>
 </head>
 <body>
@@ -14,12 +14,13 @@
     </div>
     <div class="body-container">
         <div class="fancify-box">
-            <textarea rows="5" cols="60" name="text" placeholder="Enter text"></textarea></br>
+            <textarea rows="5" cols="60" name="text" id="fancify-text-area" placeholder="Enter text"></textarea></br>
             <fieldset id="radio-set">
-            <label>Fancy Shmancy <input type="radio" id="FancyShmancy" name="radio-buttons" /></label><br>
-            <label>Boring Betty <input type="radio" id="BoringBetty" name="radio-buttons"/></label><br>
+            <label>Fancy Shmancy <input type="radio" id="FancyShmancy" name="radio-buttons" onclick="fancify()"/></label><br>
+            <label>Boring Betty <input type="radio" id="BoringBetty" name="radio-buttons" checked="checked" onclick="reset()"/></label><br>
         </fieldset>
-        <button class="bigger">Bigger!</button>
+        <button class="bigger" onclick="bigger()">Bigger!</button>
+        <button class="moo" onclick="moo()">MOO</button>
         </div>
     </div>
    
