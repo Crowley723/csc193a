@@ -49,6 +49,7 @@ function reset() {
   document
     .querySelector("#encrypt-it")
     .setAttribute("onclick", "selectCipherError()");
+    updateCipherType();
 }
 function selectCipherError(){
   var errorMessage = document.querySelector('#select-cipher-error')
@@ -75,7 +76,7 @@ function updateCipherType() {
       break;
     default:
     case "select":
-      
+      document.querySelector(".shift-slide-container").style.display = 'none';
       document.querySelector("#cipher-type").value = "select";
   }
 }
