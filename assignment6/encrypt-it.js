@@ -71,8 +71,8 @@ function updateCipherType() {
     case "shift":
       enableShiftCipher();
       break;
-    case "caeser":
-      enableCaeserCipher();
+    case "substitution":
+      enableSubstitutionCipher();
       break;
     default:
     case "select":
@@ -98,16 +98,16 @@ function enableShiftCipher() {
     shiftContainer.style.display = "none";
   }
 }
-function enableCaeserCipher() {
+function enableSubstitutionCipher() {
   document
     .querySelector("#encrypt-it")
-    .setAttribute("onclick", "caeserCipher();");
+    .setAttribute("onclick", "substitutionCipher();");
   document.querySelector(".shift-slide-container").style.display = "none";
-  document.querySelector("#cipher-type").value = "caeser";
+  document.querySelector("#cipher-type").value = "substitution";
   selectCipherError();
 }
 
-function caeserCipher() {
+function substitutionCipher() {
   const plaintextAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
   const keyLength = plaintextAlphabet.length;
   var key = Array.from(plaintextAlphabet);
