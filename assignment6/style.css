@@ -6,6 +6,30 @@
 
 /* Typography */
 
+
+body{
+  margin:0;
+  padding:0;
+}
+.navbar{
+  width:100vw;
+  background-color: #031d03;
+  min-height: 5vh;
+  justify-content: center;
+  display: flex;
+}
+.navbar a,i{
+  margin: 1vh auto;
+  font-size: 36px;
+  display: inline-block;
+  color:white;
+  
+}
+.body-container{
+  display: flex;
+  justify-content: center;
+}
+
 body {
   background-color: #202020;
   color: white;
